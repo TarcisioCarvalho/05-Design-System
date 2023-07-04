@@ -15,23 +15,12 @@ var colors = {
   ignite700: "#015F43",
   ignite900: "#00291D"
 };
-var fontSizes = {
-  xxs: "0.625rem",
-  xs: "0.75rem",
-  sm: "0.875rem",
-  md: "1rem",
-  lg: "1.125rem",
-  xl: "1.25rem",
-  "2xl": "1.5rem",
-  "4xl": "2rem",
-  "5xl": "2.25rem",
-  "6xl": "3rem",
-  "7xl": "4rem",
-  "8xl": "4.5rem",
-  "9xl": "6rem"
-};
 
-// src/index.ts
-console.log("PK");
-console.log(colors);
-console.log(fontSizes);
+// src/index.tsx
+import { jsx } from "react/jsx-runtime";
+function app() {
+  return /* @__PURE__ */ jsx("h1", { style: { color: colors.ignite300 }, children: "Hello World!!!" });
+}
+export {
+  app
+};
